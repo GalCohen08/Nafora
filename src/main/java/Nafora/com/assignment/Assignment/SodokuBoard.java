@@ -81,7 +81,7 @@ public class SodokuBoard {
 	             }
 	    	 }
 	     }
-		return false;
+		return true;
 	 }
 	
 
