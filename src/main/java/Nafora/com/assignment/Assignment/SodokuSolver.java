@@ -13,7 +13,6 @@ public class SodokuSolver
     public static void main( String[] argv ) throws Exception
     {
     	SodokuBoard sodokuBoard = new SodokuBoard(9);
-    	System.out.println(argv[0]);
     	String dataFilePath = argv[0];
     	br = new BufferedReader(new FileReader(dataFilePath));
         String newLine;
@@ -25,6 +24,10 @@ public class SodokuSolver
         		i++;
         	}  
         }
+
+       
+        System.out.println( sodokuBoard.solveSodoku(0, 0));
         sodokuBoard.printBoard();
+ 
     }
 }

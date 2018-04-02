@@ -7,7 +7,7 @@ public class SodokuBoard {
 	private static int[][] board;
 	private int size;
 	public SodokuBoard(int size){
-		SodokuBoard.board = new int[size][size];
+		this.board = new int[size][size];
 		this.size = size;
 	}
 	
@@ -29,18 +29,20 @@ public class SodokuBoard {
 	public boolean solveSodoku(int i, int j){
         if (i == size){
         	i = 0;
-            if (++j == 9){
+            if (++j == size){
                 return true;
             }
         }
+    	System.out.println(board[4][3]);
         if (board[i][j] != 0){
             return solveSodoku(i+1,j);
         }
-        for (int val = 1; val <= 9; ++val) {
+        for (int val = 1; val <= size; ++val) {
             if (isLegal(i,j,val)) {
             	board[i][j] = val;
-                if (solveSodoku(i+1,j))
-                    return true;
+                if (solveSodoku(i+1,j)){
+                	  return true;
+                }
             }
         }
         board[i][j] = 0; 
