@@ -3,10 +3,7 @@ package Nafora.com.assignment.Assignment;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Arrays;
-/**
- * Hello world!
- *
- */
+
 public class SodokuSolver 
 {
 	private static BufferedReader br;
@@ -26,7 +23,7 @@ public class SodokuSolver
         }
 
        
-        System.out.println( sodokuBoard.solveSodoku(0, 0));
+        sodokuBoard.solveSodoku(0, 0);
         sodokuBoard.printBoard();
  
     }
