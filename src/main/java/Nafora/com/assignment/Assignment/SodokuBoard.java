@@ -20,7 +20,9 @@ public class SodokuBoard {
             if (i % 3 == 0)
                 System.out.println("+-------+-------+-------+");
             for (int j = 0; j < 9; ++j) {
-                if (j % 3 == 0) System.out.print("| ");
+                if (j % 3 == 0){
+                	System.out.print("| ");
+                }
                 if(board[i][j] == 0){
                 	System.out.print(" ");
                 }else{
