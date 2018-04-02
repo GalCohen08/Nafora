@@ -46,7 +46,6 @@ public class SodokuBoard {
                 return true;
             }
         }
-    	System.out.println(board[4][3]);
         if (board[i][j] != 0){
             return solveSodoku(i+1,j);
         }
