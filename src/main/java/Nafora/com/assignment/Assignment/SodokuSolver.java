@@ -4,7 +4,7 @@ package Nafora.com.assignment.Assignment;
  * Hello world!
  *
  */
-public class App 
+public class SodokuSolver 
 {
     public static void main( String[] args )
     {
