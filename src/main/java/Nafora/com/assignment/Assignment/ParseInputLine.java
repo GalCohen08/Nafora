@@ -25,13 +25,13 @@ public class ParseInputLine{
 		int index = 0;
 		if(Character.isDigit(chars[0])){
 			array[index] = Integer.parseInt(String.valueOf(chars[0]));
-			System.out.println(array[index]);
+			index++;
+		}else{
 			index++;
 		}
 		for(int i = 1 ; i< chars.length ; i++){
 			if(Character.isDigit(chars[i])){
 				array[index] = Integer.parseInt(String.valueOf(chars[i]));
-				System.out.println(array[index]);
 				index++;
 			}else if(!Character.isDigit(chars[i]) && !Character.isDigit(chars[i-1])){
 				index++;			
