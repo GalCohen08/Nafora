@@ -21,10 +21,7 @@ public class SodokuSolver
         		i++;
         	}  
         }
-
-       
         sodokuBoard.solveSodoku(0, 0);
         sodokuBoard.printBoard();
- 
     }
 }
